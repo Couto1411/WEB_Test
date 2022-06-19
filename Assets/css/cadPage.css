@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+html,body {height: 100%}
+body {font-family: Arial, Helvetica, sans-serif;}
+body a{text-decoration: none;}
+body a:hover{text-decoration: none;}
+header {
+  display: inline;
+  top: 0;
+  width: 100%;
+}
+header .navbrand{
+  font-family: 'Cute Font', cursive;
+  font-size: 2.5em;
+  color: silver;
+  text-transform: uppercase;
+}
+header .navbrand .bi{
+  font-size: 1em;
+  animation-name: mudaYellow;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.headernav{margin:1em;}
+.zoom{transition: transform .2s; display: inline-flex;}
+.zoom:hover{transform: scale(1.05);}
+
+main{
+  background: url("../Imgs/pexels-david-alberto-carmona-coto-1151418.jpg");
+  background-size: cover;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.contem button {
+  padding: 0.8em 1.2em;
+  margin: 0.5em 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.contem{
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+@keyframes mudaYellow{
+  from{color: silver;}
+  to {color:rgb(246, 255, 0);}
+}
+@media screen and (min-width:48em){
+  .right-border{
+      padding-bottom: 0;
+      border-bottom: 0;
+      border-right: 0.01em solid white;
+  }
+  main{
+    height: 75%;
+  }
+}

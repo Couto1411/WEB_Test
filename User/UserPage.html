@@ -7,61 +7,110 @@
         <meta name="keywords" content="energia, sustentavel, solar, eolica, nuclear, maremotriz, hidreletrica, geracao"
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/css/normalize.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--Titulo da aba-->
         <title>Nuclear Energy Center</title>
     </HEAD>
-    <body>
-        <div>
-            <table align="center" cellspacing="30" bgcolor="7b3ccf">
-                <tr>
-                    <td><a href="../Pages/Eolica.html"><font color="black">Eolica</font></a></td>
-                    <td><a href="../Pages/Solar.html"><font color="black">Solar</font></a></td>
-                    <td><a href="../Pages/Maremotriz.html"><font color="black">Maremotriz</font></a></td>
-                    <td><a href="../index.html"><font color="black"><h1 id="siteTitle">Energy Center</h1></font></a>
-                    <td><a href="../Pages/Nuclear.html"><font color="black"><strong>Nuclear</strong></font></a></td>
-                    <td><a href="../Pages/Hidreletrica.html"><font color="black">Hidrelétrica</font></a></td>
-                    <!-- A intenção é das opções de usuário serem dropdown no canto direito da barra de navegação -->
-                    <td><a id="pageCadastro" href="../User/Cadastro.html"><font color="black">Cadastrar novo usuário</font></a></td>
-                    <td><a id="pageLogin" href="../User/Login.html"><font color="black">Mudar de usuário</font></a></td>
-                </tr>
-            </table>
-        </div>
-        <h2>Notificações:</h2>
-        <hr>
-        <div>
-            <table cellspacing="20">
-                <tr>
-                    <td><img src="../Imgs/Not1.jpg" height="100" alt="Not1"></td>
-                    <td><a href="https://gauchazh.clicrbs.com.br/educacao-e-emprego/noticia/2022/04/ufsm-tera-parada-de-onibus-com-energia-solar-para-lampadas-e-carregadores-cl2afue9t001q0165ce0o6hun.html" target="_blank"><font color="black">UFSM terá parada de ônibus com energia solar para lâmpadas e carregadores</font></td>
-                </tr>
-                <tr>
-                    <td><img src="../Imgs/Not2.jpg" height="100" alt="Not1"></td>
-                    <td><a href="https://veja.abril.com.br/agenda-verde/dia-da-terra-e-oportunidade-para-valorizar-acoes-pela-descarbonizacao/" target="_blank"><font color="black">Dia da Terra é oportunidade para valorizar ações pela descarbonização</font></td>
-                </tr>
-                <tr>
-                    <td><img src="../Imgs/Not3.png" height="100" alt="Not1"></td>
-                    <td><a href="https://cultura.uol.com.br/noticias/48302_no-dia-da-terra-conheca-5-jogos-que-ensinam-sobre-sustentabilidade.html" target="_blank"><font color="black">No Dia da Terra, conheça 5 jogos que ensinam sobre sustentabilidade</font></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+    <body class="userPage">
+        <header>
+            <div class="p-3 bg-dark headerImg">
+                <nav class="headernav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-11">
+                                <div class="zoom"><a class="navbrand" href="../index.html"><i class="bi bi-lightbulb"></i>Energy Center</a></div>
+                            </div>
+                            <div class="col-md-1 d-flex flex-column align-items-start">
+                                <button class="navbar-toggler collapsed menu" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="bi bi-list" style="color: silver;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="navbar-collapse collapse bg-light" id="navbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 text-center p-0">
+                            <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 eolica"><div class="zoom"><a class="text-decoration-none" href="../Pages/Eolica.html" class="headerEolica">Eolica</a></div></li>
+                                <li class="pt-1 pb-1 solar"><div class="zoom"><a class="text-decoration-none" href="../Pages/Solar.html" class="headerSolar">Solar</a></div></li>
+                                <li class="pt-1 pb-1 maremotriz"><div class="zoom"><a class="text-decoration-none" href="../Pages/Maremotriz.html" class="headerMaremotriz">Maremotriz</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center p-0">
+                                <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 nuclear"><div class="zoom"><a class="text-decoration-none" href="../Pages/Nuclear.html" class="headerNuclear">Nuclear</a></div></li>
+                                <li class="pt-1 pb-1 hidreletrica"><div class="zoom"><a class="text-decoration-none" href="../Pages/Hidreletrica.html" class="headerHidreletrica">Hidrelétrica</a></div></li>
+                                <li class="pt-1 pb-1 cad"><div class="zoom"><a class="text-decoration-none" href="Login.html" class="headerCadastro">Trocar Usuário</a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h3>Notificações:</h3>
+                <div class="container">
+                    <div class="row pb-2 border-bottom border-secondary">
+                        <div class="col-md-4">
+                            <img src="../Assets/Imgs/Not1.jpg" class="img-fluid" alt="Not1">
+                        </div>
+                        <div class="col-md-8">
+                            <a href="https://gauchazh.clicrbs.com.br/educacao-e-emprego/noticia/2022/04/ufsm-tera-parada-de-onibus-com-energia-solar-para-lampadas-e-carregadores-cl2afue9t001q0165ce0o6hun.html" target="_blank">UFSM terá parada de ônibus com energia solar para lâmpadas e carregadores</a>
+                        </div>
+                    </div>
+                    <div class="row pb-2 pt-2 border-bottom border-secondary">
+                        <div class="col-md-4">
+                            <img src="../Assets/Imgs/Not2.jpg" class="img-fluid" alt="Not2">
+                        </div>
+                        <div class="col-md-8">
+                            <a href="https://veja.abril.com.br/agenda-verde/dia-da-terra-e-oportunidade-para-valorizar-acoes-pela-descarbonizacao/" target="_blank">Dia da Terra é oportunidade para valorizar ações pela descarbonização</a>
+                        </div>
+                    </div>
+                    <div class="row pb-2 pt-2 border-bottom border-secondary">
+                        <div class="col-md-4">
+                            <img src="../Assets/Imgs/Not3.png" class="img-fluid" alt="Not3">
+                        </div>
+                        <div class="col-md-8">
+                            <a href="https://cultura.uol.com.br/noticias/48302_no-dia-da-terra-conheca-5-jogos-que-ensinam-sobre-sustentabilidade.html" target="_blank">No Dia da Terra, conheça 5 jogos que ensinam sobre sustentabilidade</a>
+                        </div>
+                    </div>
+                    <div class="row pb-2 pt-2 border-bottom border-secondary">
+                        <div class="col-md-4">
+                            <img src="../Assets/Imgs/Not4.jpeg" class="img-fluid" alt="Not4">
+                        </div>
+                        <div class="col-md-8">
+                            <a href="https://www.radioculturafoz.com.br/2022/06/15/seminario-destaca-a-importancia-da-sinergia-e-da-cooperacao-para-chegarmos-ao-desenvolvimento-sustentavel/" target="_blank">Seminário destaca a importância da sinergia e da cooperação para chegarmos ao desenvolvimento sustentável</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-center text-white">
+            <div class="container">
+                <div class="row p-3 align-items-center justify-content-center">
+                    <div class="pr-3">
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.facebook.com/gabriel.couto.336717/" role="button" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/couto1411/" role="button" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:gabriel.couto14@hotmail.com" role="button" target="_blank"><i class="bi bi-envelope"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="tel:37998572002" role="button" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/gabriel-couto-582060200/" role="button" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/Couto1411" role="button" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Gabriel Couto Assis
+            </div>
+        </footer>
     </body>
-    <footer>
-        <div>
-            <table align="center" cellspacing="30" bgcolor="#1205ff">
-                <tr>
-                    <td><a href="../Pages/Sobre.html"><font color="black">Sobre</font></a></td>
-                    <td>
-                        <ul>
-                            <li><a href="tel:37998572002"><font color="black">37998572002</font></a></li>
-                            <li><a href="mailto:gabriel.couto14@hotmail.com"><font color="black">gabriel.couto14@hotmail.com</font></a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </footer>
 </html>

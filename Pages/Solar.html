@@ -7,64 +7,100 @@
         <meta name="keywords" content="energia, sustentavel, solar, eolica, nuclear, maremotriz, hidreletrica, geracao"
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Titulo da aba-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/css/normalize.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <title>Solar Energy Center</title>
     </HEAD>
-    <body>
-        <div>
-                <table align="center" cellspacing="30" bgcolor="f7ec19">
-                    <tr>
-                        <td><a href="Eolica.html"><font color="black">Eolica</font></a></td>
-                        <td><a href="Solar.html"><font color="black"><strong>Solar</strong></font></a></td>
-                        <td><a href="Maremotriz.html"><font color="black">Maremotriz</font></a></td>
-                        <td><a href="../index.html"><font color="black"><h1 id="siteTitle">Energy Center</h1></font></a>
-                        <td><a href="Nuclear.html"><font color="black">Nuclear</font></a></td>
-                        <td><a href="Hidreletrica.html"><font color="black">Hidrelétrica</font></a></td>
-                        <!-- A intenção é das opções de usuário serem dropdown no canto direito da barra de navegação -->
-                        <td><a id="pageCadastro" href="../User/Cadastro.html"><font color="black">Cadastro</font></a></td>
-                        <td><a id="pageLogin" href="../User/Login.html"><font color="black">Login</font></a></td>
-                    </tr>
-                </table>
-        </div>
-        <!-- Imagem de background -->
-        <img src="../Imgs/Solar.jpg" height="100" alt="Imagem background">
-        <div>
-            <table align="center" cellspacing="20">
-                <div>
-                    <tr><td>A energia solar, como o próprio nome indica, refere-se à energia cuja fonte é o Sol. Sua captação pode ser feita por meio de diversas tecnologias, como painéis fotovoltaicos, usinas heliotérmicas e aquecedores solares.</td></tr>
-                    <tr><td>Basicamente, ao ser captada, a luz solar é convertida em energia. Nos painéis fotovoltaicos e nas usinas heliotérmicas, a luz solar é convertida em energia elétrica e térmica. Já no aquecimento solar, a luz solar é convertida em energia térmica</td></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr><td>Apesar do crescimento do uso da energia solar nos últimos anos, essa forma energética representa apenas 1,3% da energia elétrica gerada no mundo.</td></tr>
-                    <tr><td>Quando o assunto é uso de energia solar, a China aparece como líder no ranking de países que investem nesse setor, representando cerca de 26% das instalações de energia solar do mundo. Países como Estados Unidos e Japão também se destacam, cada um representando, aproximadamente, 13% da produção.</td></tr>
-                    <tr><td>O Brasil foi o primeiro país subdesenvolvido a fabricar células fotovoltaicas. Por estar localizado próximo à Linha do Equador, uma região de alta incidência solar, o país conta com um cenário extremamente favorável para a geração energética a partir da energia solar. Além disso, é abundante em silício, matéria-prima usada para fabricação das células fotovoltaicas.</td></tr>
-                </div>
-                <div>
-                    <tr><td>O video a seguir explica alguns conceitos sobre energia solar:</td></tr>
-                </div>
-            </table>
-        </div>
-        <center>
-            <div>
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/JTqz_xzozl0" frameBorder="0">
-                    Browser não compatível
-                </iframe>
+    <body class="solarPage">
+        <header>
+            <div class="p-3 bg-image headerImg">
+                <nav class="headernav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-11">
+                                <a class="navbrand" href="../index.html"><i class="bi bi-lightbulb"></i><div class="zoom">Energy Center</div></a>
+                            </div>
+                            <div class="col-md-1 d-flex flex-column align-items-start">
+                                <button class="navbar-toggler collapsed menu" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="bi bi-list" style="color: rgb(255, 255, 155);"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </center>
-    </body>
-    <footer>
-        <div>
-            <table align="center" cellspacing="30" bgcolor="#1205ff">
-                <tr>
-                    <td><a href="Sobre.html"><font color="black">Sobre</font></a></td>
-                    <td>
-                        <ul>
-                            <li><a href="tel:37998572002"><font color="black">37998572002</font></a></li>
-                            <li><a href="mailto:gabriel.couto14@hotmail.com"><font color="black">gabriel.couto14@hotmail.com</font></a></li>
+            <div class="navbar-collapse collapse bg-light" id="navbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 text-center p-0">
+                            <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 eolica"><div class="zoom"><a class="text-decoration-none" href="Eolica.html" class="headerEolica">Eolica</a></div></li>
+                                <li class="pt-1 pb-1 solar"><div class="zoom"><a class="text-decoration-none" href="Solar.html" class="headerSolar">Solar</a></div></li>
+                                <li class="pt-1 pb-1 maremotriz"><div class="zoom"><a class="text-decoration-none" href="Maremotriz.html" class="headerMaremotriz">Maremotriz</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center p-0">
+                                <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 nuclear"><div class="zoom"><a class="text-decoration-none" href="Nuclear.html" class="headerNuclear">Nuclear</a></div></li>
+                                <li class="pt-1 pb-1 hidreletrica"><div class="zoom"><a class="text-decoration-none" href="Hidreletrica.html" class="headerHidreletrica">Hidrelétrica</a></div></li>
+                                <li class="pt-1 pb-1 cad"><div class="zoom"><a class="text-decoration-none" href="../User/Login.html" class="headerCadastro">Cadastro/Login</a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h3><strong>A Energia Solar</strong></h3>
+                A energia solar, como o próprio nome indica, refere-se à energia cuja fonte é o Sol. Sua captação pode ser feita por meio de diversas tecnologias, como painéis fotovoltaicos, usinas heliotérmicas e aquecedores solares.<br>
+                Basicamente, ao ser captada, a luz solar é convertida em energia. Nos painéis fotovoltaicos e nas usinas heliotérmicas, a luz solar é convertida em energia elétrica e térmica. Já no aquecimento solar, a luz solar é convertida em energia térmica<br>
+                Apesar do crescimento do uso da energia solar nos últimos anos, essa forma energética representa apenas 1,3% da energia elétrica gerada no mundo.<br>
+                Quando o assunto é uso de energia solar, a China aparece como líder no ranking de países que investem nesse setor, representando cerca de 26% das instalações de energia solar do mundo. Países como Estados Unidos e Japão também se destacam, cada um representando, aproximadamente, 13% da produção.<br>
+                O Brasil foi o primeiro país subdesenvolvido a fabricar células fotovoltaicas. Por estar localizado próximo à Linha do Equador, uma região de alta incidência solar, o país conta com um cenário extremamente favorável para a geração energética a partir da energia solar. Além disso, é abundante em silício, matéria-prima usada para fabricação das células fotovoltaicas.<br>
+            </section>
+            <section>
+                O video a seguir explica alguns conceitos sobre energia solar:
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="embed-responsive embed-responsive-16by9 video" >
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JTqz_xzozl0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-center text-white">
+            <div class="container">
+                <div class="row p-3 align-items-center justify-content-center">
+                    <div class="col-md-4 col-lg-3 buttons pr-3">
+                        <ul class="list-unstyled right-border">
+                            <li><a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.facebook.com/gabriel.couto.336717/" role="button" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/couto1411/" role="button" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:gabriel.couto14@hotmail.com" role="button" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                            <li><a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="tel:37998572002" role="button" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/gabriel-couto-582060200/" role="button" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/Couto1411" role="button" target="_blank"><i class="bi bi-github"></i></a></li>
                         </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </footer>
+                    </div>
+                    <div class="col-md-3 col-lg-3 buttons pl-3 ">
+                        <h5 class="text-uppercase">Informações</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://brasilescola.uol.com.br/" class="text-white" target="_blank">Brasil Escola</a></li>
+                            <li><a href="https://esferaenergia.com.br/blog/energia-sustentavel/" class="text-white" target="_blank">Esfera Energia</a></li>
+                            <li><a href="https://www.infoescola.com/ecologia/fontes-de-energia-sustentavel/" class="text-white" target="_blank">Info Escola</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Gabriel Couto Assis
+            </div>
+        </footer>
+    </body>
 </html>

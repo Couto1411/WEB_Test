@@ -7,63 +7,105 @@
         <meta name="keywords" content="energia, sustentavel, solar, eolica, nuclear, maremotriz, hidreletrica, geracao"
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="Assets/css/normalize.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--Titulo da aba-->
         <title>Energy Center</title>
     </HEAD>
-    <body>
-        <div>
-                <table align="center" cellspacing="30" bgcolor="#2fff00">
-                    <tr>
-                        <!-- Acessada apenas logado -->
-                        <td><form action="User/UserPage.html"><input type="submit" value="Userpage"/></form></td>
-                        <td><a href="Pages/Eolica.html"><font color="black">Eolica</font></a></td>
-                        <td><a href="Pages/Solar.html"><font color="black">Solar</font></a></td>
-                        <td><a href="Pages/Maremotriz.html"><font color="black">Maremotriz</font></a></td>
-                        <td><h1 id="siteTitle">Energy Center</h1>
-                        <td><a href="Pages/Nuclear.html"><font color="black">Nuclear</font></a></td>
-                        <td><a href="Pages/Hidrelétrica.html"><font color="black">Hidrelétrica</font></a></td>
-                        <!-- A intenção é das opções de usuário serem dropdown no canto direito da barra de navegação -->
-                        <td><a id="pageCadastro" href="User/Cadastro.html"><font color="black">Cadastro</font></a></td>
-                        <td><a id="pageLogin" href="User/Login.html"><font color="black">Login</font></a></td>
-                    </tr>
-                </table>
-        </div>
-        <!-- Imagem de background -->
-        <img id="bgImage" src="Imgs/EnergiaSustentavel.jpg" height="100" alt="Imagem background">
-        <div>
-            <table align="center" cellspacing="20">
-                <div>
-                    <tr><td>Energia sustentável nunca esteve tão em evidência como agora. E não é para menos, uma vez que as principais fontes energéticas mundiais, os combustíveis fósseis como petróleo, carvão mineral e gás natural, não vão durar para sempre e, após seu esgotamento, precisaremos continuar abastecendo lares e indústrias.</td></tr>
-                    <tr><td>Para se ter uma ideia da importância do tema, a ONU o transformou em um dos seus Objetivos de Desenvolvimento Sustentável. Está lá no número 7: garantir o acesso a fontes de energia viáveis, sustentáveis e modernas para todos.</td></tr>
-                    <tr><td>O conceito de energia sustentável está intrinsecamente conectado ao de desenvolvimento sustentável. Em suma, é a energia capaz de suprir as necessidades da geração atual sem comprometer as necessidades das futuras gerações.</td></tr>
-                    <tr><td>Detalhando ainda mais, é todo o tipo de energia que consegue manter um equilíbrio entre produção e consumo. Ela é gerada sem provocar grandes impactos ao meio ambiente e é consumida em quantidade e velocidade nas quais a natureza ou a ação humana conseguem repor.</td></tr>
-                </div>
-                <div>
-                    <tr><td>O video a seguir explica alguns conceitos sobre energias renováveis:</td></tr>
-                </div>
-            </table>
-        </div>
-        <center>
-            <div>
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/8DVtAW3xNx8" frameBorder="0">
-                    Browser não compatível
-                </iframe>
+    <body class="welcomePage">
+        <header>
+            <div class="p-3 bg-image headerImg">
+                <nav class="headernav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-11">
+                                <a class="navbrand" href="#"><i class="bi bi-lightbulb"></i><div class="zoom">Energy Center</div></a>
+                            </div>
+                            <div class="col-md-1 d-flex flex-column align-items-start">
+                                <button class="navbar-toggler collapsed menu" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="bi bi-list" style="color: silver;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </center>
-    </body>
-    <footer>
-        <div>
-            <table align="center" cellspacing="30" bgcolor="#1205ff">
-                <tr>
-                    <td><a href="Pages/Sobre.html"><font color="black">Sobre</font></a></td>
-                    <td>
-                        <ul>
-                            <li><a href="tel:37998572002"><font color="black">37998572002</font></a></li>
-                            <li><a href="mailto:gabriel.couto14@hotmail.com"><font color="black">gabriel.couto14@hotmail.com</font></a></li>
+            <div class="navbar-collapse collapse bg-light" id="navbar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 text-center p-0">
+                            <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 eolica"><div class="zoom"><a class="text-decoration-none" href="Pages/Eolica.html" class="headerEolica">Eolica</a></div></li>
+                                <li class="pt-1 pb-1 solar"><div class="zoom"><a class="text-decoration-none" href="Pages/Solar.html" class="headerSolar">Solar</a></div></li>
+                                <li class="pt-1 pb-1 maremotriz"><div class="zoom"><a class="text-decoration-none" href="Pages/Maremotriz.html" class="headerMaremotriz">Maremotriz</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center p-0">
+                                <ul class="m-0 p-0">
+                                <li class="pt-1 pb-1 nuclear"><div class="zoom"><a class="text-decoration-none" href="Pages/Nuclear.html" class="headerNuclear">Nuclear</a></div></li>
+                                <li class="pt-1 pb-1 hidreletrica"><div class="zoom"><a class="text-decoration-none" href="Pages/Hidreletrica.html" class="headerHidreletrica">Hidrelétrica</a></div></li>
+                                <li class="pt-1 pb-1 cad"><div class="zoom"><a class="text-decoration-none" href="User/Login.html" class="headerCadastro">Cadastro/Login</a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h3><strong>Por que investir em energia sustentável?</strong></h3>
+                <div>
+                    Energia sustentável nunca esteve tão em evidência como agora. E não é para menos, uma vez que as principais fontes energéticas mundiais, os combustíveis fósseis como petróleo, carvão mineral e gás natural, não vão durar para sempre e, após seu esgotamento, precisaremos continuar abastecendo lares e indústrias.<br>
+                    Para se ter uma ideia da importância do tema, a ONU o transformou em um dos seus Objetivos de Desenvolvimento Sustentável. Está lá no número 7: garantir o acesso a fontes de energia viáveis, sustentáveis e modernas para todos.<br>
+                    O conceito de energia sustentável está intrinsecamente conectado ao de desenvolvimento sustentável. Em suma, é a energia capaz de suprir as necessidades da geração atual sem comprometer as necessidades das futuras gerações.<br>
+                    Detalhando ainda mais, é todo o tipo de energia que consegue manter um equilíbrio entre produção e consumo. Ela é gerada sem provocar grandes impactos ao meio ambiente e é consumida em quantidade e velocidade nas quais a natureza ou a ação humana conseguem repor.<br>
+                </div>
+                
+            </section>
+            <section>
+                <div>
+                    O video a seguir explica alguns conceitos sobre energias renováveis:
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="embed-responsive embed-responsive-16by9 video" >
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8DVtAW3xNx8"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-center text-white">
+            <div class="container">
+                <div class="row p-3 align-items-center justify-content-center">
+                    <div class="col-md-4 col-lg-3 pr-3">
+                        <ul class="list-unstyled right-border">
+                            <li><a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.facebook.com/gabriel.couto.336717/" role="button" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.instagram.com/couto1411/" role="button" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="mailto:gabriel.couto14@hotmail.com" role="button" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                            <li><a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="tel:37998572002" role="button" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/gabriel-couto-582060200/" role="button" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/Couto1411" role="button" target="_blank"><i class="bi bi-github"></i></a></li>
                         </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </footer>
+                    </div>
+                    <div class="col-md-3 col-lg-3 pl-3 ">
+                        <h5 class="text-uppercase">Informações</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://brasilescola.uol.com.br/" class="text-white" target="_blank">Brasil Escola</a></li>
+                            <li><a href="https://esferaenergia.com.br/blog/energia-sustentavel/" class="text-white" target="_blank">Esfera Energia</a></li>
+                            <li><a href="https://www.infoescola.com/ecologia/fontes-de-energia-sustentavel/" class="text-white" target="_blank">Info Escola</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: Gabriel Couto Assis
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Noto+Sans&display=swap');
 
 html{
     font-size: 16px;
@@ -9,7 +10,7 @@ body a{
 }
 
 .welcomePage{background-image: linear-gradient(90deg, rgb(66, 126, 97) 0%, rgb(78, 163, 48) 100%);}
-.userPage{background-image: linear-gradient(90deg, rgb(65, 97, 82) 0%, rgb(78, 163, 48) 100%);}
+.userPage{background-color: rgb(209, 209, 106) }
 .eolicaPage{background-image: linear-gradient(90deg, rgb(132, 132, 132) 0%, rgb(220, 220, 220) 100%);}
 .hidrelePage{background-image: linear-gradient(90deg, rgb(0, 104, 105) 0%, rgb(0, 195, 255) 100%);}
 .maremotrizPage{background-image: linear-gradient(90deg, rgb(1, 30, 39) 0%, rgb(4, 126, 163) 100%);}
@@ -29,6 +30,10 @@ main section{
 h3{
     padding-bottom: 0.5em;
     border-bottom: 0.01em solid rgb(153, 153, 153);
+}
+.hidden-mobile{
+    display: none;
+    opacity: 0;
 }
 
 /* header */
@@ -104,6 +109,14 @@ header .menu{
 }
 .solarPage header .navbrand{color: rgb(255, 255, 155);}
 .solarPage .navbrand .bi{animation-name: mudaYellowSolar;}
+.userPage .headerImg{
+    background: url("../../Assets/Imgs/cad.jpg")  no-repeat center center;
+    background-position: top;
+    background-size: cover;
+}
+.userPage header .navbrand{color: rgb(0, 0, 0);}
+.userPage main section a{font-size: 4vw; color: rgb(220, 0, 0);font-weight: bold;}
+.userPage main section a:hover{text-decoration: none; color: rgb(179, 0, 0);}
 
 .zoom{transition: transform .2s; display: inline-flex;}
 .zoom:hover{transform: scale(1.05);}
@@ -174,6 +187,21 @@ header .menu{
         padding-top: 0.5em;
         font-size: 2.5em;
     }
+    .hidden-mobile{
+        display:block;
+        opacity: 1;
+    }
+    .hidden-desktop{
+        display: none;
+        opacity: 0;
+    }
+    .userPage main section a{font-size: 3vw}
+    .userPage main section ul{
+        font-size: 1.5vh;
+        margin-left: -2%;
+        
+    color: rgb(98, 98, 98);
+    }
 }
 @media screen and (min-width:62em){
 
@@ -192,5 +220,18 @@ header .menu{
         margin: 1.5em 17vw;
         padding: 1.5em;
     }
+    .userPage main section a{font-size: 2.5vw}
+    .userPage main section ul{
+        font-size: 1.7vh;
+        margin-left: -2%;
+        color: rgb(98, 98, 98);
+    }
 }
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Noto+Sans&display=swap');
+@media screen and (min-width:75em){
+    .userPage main section a{font-size: 2vw}
+    .userPage main section ul{
+        font-size: 2vh;
+        margin-left: -2%;
+        color: rgb(98, 98, 98);
+    }
+}
